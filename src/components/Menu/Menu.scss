@@ -1,0 +1,13 @@
+$color_principal: black;
+$color_secundario: white;
+$opacidad: 0.6;
+
+.nav-tabs .nav-item .nav-link {
+    background-color: rgba($color: $color_secundario, $alpha: $opacidad);
+    color: $color_principal;
+}
+
+.nav-link.active {
+    color: $color_secundario !important;
+    background-color: rgba($color: $color_principal, $alpha: $opacidad) !important;
+}
