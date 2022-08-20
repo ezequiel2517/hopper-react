@@ -3,9 +3,9 @@ import './Menu.scss'
 
 function Menu() {
   return (
-    <Nav variant="tabs" defaultActiveKey="/home">
+    <Nav variant="tabs" defaultActiveKey="/">
       <Nav.Item>
-        <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="link-1">Ofertas</Nav.Link>
