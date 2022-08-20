@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/hopper-react/static/css/main.92b14748.css",
-    "main.js": "/hopper-react/static/js/main.0e8f8b85.js",
+    "main.js": "/hopper-react/static/js/main.1eae043e.js",
     "static/js/787.c4ce0a6d.chunk.js": "/hopper-react/static/js/787.c4ce0a6d.chunk.js",
     "static/media/banner.jpg": "/hopper-react/static/media/banner.6eed7b6cf4c1dbf6299f.jpg",
     "static/media/carrito.png": "/hopper-react/static/media/carrito.9a41d86961a708e89697.png",
     "index.html": "/hopper-react/index.html",
     "main.92b14748.css.map": "/hopper-react/static/css/main.92b14748.css.map",
-    "main.0e8f8b85.js.map": "/hopper-react/static/js/main.0e8f8b85.js.map",
+    "main.1eae043e.js.map": "/hopper-react/static/js/main.1eae043e.js.map",
     "787.c4ce0a6d.chunk.js.map": "/hopper-react/static/js/787.c4ce0a6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92b14748.css",
-    "static/js/main.0e8f8b85.js"
+    "static/js/main.1eae043e.js"
   ]
 }
