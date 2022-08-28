@@ -1,11 +1,22 @@
-import './ItemListaContainer.scss'
+import { useEffect, useState } from "react"
+import { getDatos } from "../../helpers/getDatos"
+import ItemList from "../ItemList/ItemList.js"
 
-function ItemListContainer({greeting}) {
+
+function ItemListContainer() {
+
+    const [productos, setProductos] = useState([]);
+
+    useEffect(() => {
+        getDatos()
+            .then((res) => {setProductos(res);})
+    }, [])
+
     return (
-        <div className="formatoLista">
-            {greeting}
+        <div>
+            <ItemList productos={productos} />
         </div>
     )
 }
 
-export default ItemListContainer;
+export default ItemListContainer

@@ -1,0 +1,12 @@
+$color_sombra: rgba(0, 0, 0, 0.3);
+
+.cardHover {
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 5px 15px $color_sombra;
+      }
+    transition: box-shadow 0.3s;
+    transition: transform  0.3s;
+      
+}

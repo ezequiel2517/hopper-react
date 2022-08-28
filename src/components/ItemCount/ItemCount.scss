@@ -1,0 +1,43 @@
+$height_counter: 40px;
+$width_counter: 100px;
+$color_button_iter: gray;
+
+.contenedorCounter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: $width_counter+2*$height_counter;
+    margin: auto;
+}
+
+.itemCounter {
+    height: $height_counter;
+    width: $width_counter;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    &:active{
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}
+
+.buttonCompra{
+    width: 100%;
+}
+
+.buttonIter{
+    height: $height_counter;
+    width: $height_counter;
+}
