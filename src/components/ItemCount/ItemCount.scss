@@ -1,11 +1,10 @@
-$height_counter: 40px;
-$width_counter: 100px;
+$height_counter: 35px;
+$width_counter: 75px;
 $color_button_iter: gray;
 
 .contenedorCounter {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: $width_counter+2*$height_counter;
@@ -34,10 +33,22 @@ $color_button_iter: gray;
 }
 
 .buttonCompra{
-    width: 100%;
+    width: $width_counter+2*$height_counter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonIter{
     height: $height_counter;
     width: $height_counter;
+}
+
+.itemCount {
+    display: flex;
+    flex-direction: row;
+    max-height: $height_counter;
+    width: min-content;
+    gap: 10px;
 }

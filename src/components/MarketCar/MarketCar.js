@@ -1,7 +1,7 @@
-import carritoIcon from './carrito.png'
-import './Carrito.scss'
+import carritoIcon from './MarketCar.png'
+import './MarketCar.scss'
 
-function Carrito() {
+function MarketCar() {
     return (
         <div className="contenedorCarrito">
             <div className="numeroCompras">
@@ -16,4 +16,4 @@ function Carrito() {
     )
 }
 
-export default Carrito;
+export default MarketCar;

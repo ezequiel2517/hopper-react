@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react"
-import { getDatos } from "../../helpers/getDatos"
+import { getListComics } from "../../helpers/ComicVine/getListComics.js"
 import ItemList from "../ItemList/ItemList.js"
 
 
 function ItemListContainer() {
 
-    const [productos, setProductos] = useState([]);
+    const [comics, setComics] = useState([]);
 
     useEffect(() => {
-        getDatos()
-            .then((res) => {setProductos(res);})
+        getListComics()
+            .then((res) => {setComics(res);})
     }, [])
-
+    
     return (
         <div>
-            <ItemList productos={productos} />
+            <ItemList productos={comics} />
         </div>
     )
 }

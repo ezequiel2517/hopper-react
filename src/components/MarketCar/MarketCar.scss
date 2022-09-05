@@ -1,21 +1,22 @@
 $color_fondo: white;
-$color_borde: black;
-$opacidad_fondo: 0.6;
-$color_nVentas: red;
+$color_borde: white;
+$color_nVentas: black;
+$margin_border_carro: 10px;
 
 .formatoCarrito{
-    background-color: rgba($color: $color_fondo, $alpha: $opacidad_fondo);
+    background-color: rgba($color: $color_fondo, $alpha: 0);
     width: 60px;
-    border-radius: 30px;
+    border-radius: $margin_border_carro;
     padding: 5px;
     border: 2px solid $color_borde;
-    margin-bottom: 15px;
+    margin-bottom: $margin_border_carro;
     cursor: pointer;
 }
 
 .numeroCompras {
     position: relative;
-    top: 15px;
+    top: 14px;
+    left: 7px;
     background-color: $color_nVentas;
     width: 25px;
     height: 25px;
@@ -26,6 +27,7 @@ $color_nVentas: red;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: white;
 }
 
 .contenedorCarrito{

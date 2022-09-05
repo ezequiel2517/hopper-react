@@ -1,18 +1,19 @@
 import Card from 'react-bootstrap/Card';
-import './Item.scss';
+import { Link } from 'react-router-dom'
 
 function Item({producto}) {
   return (
-          <Card className='w-25 cardHover'>
-            <Card.Img variant="top" src={producto.img} />
+          <Card className='w-25'>
+            <Card.Img variant="top" src={producto.image.original_url} />
             <Card.Body>
               <Card.Title>
-                {producto.nombre}
+                {producto.name}
                 </Card.Title>
               <Card.Text>
-                {producto.desc}
+                Publicación: {producto.cover_date}
               </Card.Text>
             </Card.Body>
+            <Link to={`/comic/${producto.id}`} className="btn btn-danger my-2">Ver más</Link>
           </Card>
   );
 }

@@ -18,27 +18,29 @@ function ItemCount({ stock, inicial, onAdd }) {
         }
     }
     return (
-        <div className='contenedorCounter'>
-            <InputGroup className='formCounter'>
-                <Button
-                    variant="secondary"
-                    className='buttonIter'
-                    onClick={handleRestar}
-                >-</Button>
-                <Card body className='itemCounter'>
-                    {counter}
-                </Card>
-                <Button variant="secondary"
-                    className='buttonIter'
-                    onClick={handleSumar}
-                >+</Button>
-            </InputGroup>
-            <h5>Stock: {stock}</h5>
+        <div className='itemCount'>
+            <div className='contenedorCounter'>
+                <InputGroup className='formCounter'>
+                    <Button
+                        variant="secondary"
+                        className='buttonIter'
+                        onClick={handleRestar}
+                    >-</Button>
+                    <Card body className='itemCounter'>
+                        {counter}
+                    </Card>
+                    <Button variant="secondary"
+                        className='buttonIter'
+                        onClick={handleSumar}
+                    >+</Button>
+                </InputGroup>
+            </div>
             <Button
-                variant="primary"
+                variant="danger"
                 className='buttonCompra'
                 onClick={stock > 0 ? onAdd : null}
-            >Comprar</Button>
+            >Comprar
+            </Button>
         </div>
     );
 }

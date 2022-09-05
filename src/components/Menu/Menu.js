@@ -3,7 +3,10 @@ import './Menu.scss'
 
 function Menu() {
   return (
-    <Nav variant="tabs" defaultActiveKey="link-0">
+    <Nav
+      variant="tabs"
+      defaultActiveKey="link-0"
+      className='menu'>
       <Nav.Item>
         <Nav.Link eventKey="link-0">Home</Nav.Link>
       </Nav.Item>
