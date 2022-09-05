@@ -5,7 +5,7 @@ $margin_border_carro: 10px;
 
 .formatoCarrito{
     background-color: rgba($color: $color_fondo, $alpha: 0);
-    width: 60px;
+    width: 8vh;
     border-radius: $margin_border_carro;
     padding: 5px;
     border: 2px solid $color_borde;
@@ -18,8 +18,8 @@ $margin_border_carro: 10px;
     top: 14px;
     left: 7px;
     background-color: $color_nVentas;
-    width: 25px;
-    height: 25px;
+    width: 3.5vh;
+    height: 3.5vh;
     border-radius: 15px;
     border: 2px solid $color_borde;
     display: flex;
@@ -34,4 +34,7 @@ $margin_border_carro: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: absolute;
+    top: 0.5vh;
+    right: 2vh;
 }

@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 
 
 function App() {
@@ -14,6 +13,7 @@ function App() {
         <Routes>
               <Route path='/' element={<ItemListContainer/>}/>
               <Route path='/comic/:comicId' element={<ItemDetailContainer/>}/>
+              <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
               <Route path='*' element={<Navigate to="/"/>} />
         </Routes>
     </BrowserRouter>

@@ -5,7 +5,6 @@ export function getComic(id) {
         .then((res)=> res.json())
         .then((data)=> {
             let {results : [comic]} = data;
-            console.log(comic);
             return comic;
         });
 }

@@ -1,14 +1,11 @@
-import parse from 'html-react-parser'
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
-
 import "./ItemDetail.scss"
 import ItemCount from '../ItemCount/ItemCount';
-import Title from '../Title/Title';
 
-function ItemDetail({ producto: { cover_date: publicacion, image: { original_url }, name, description } }) {
+function ItemDetail({ producto: { cover_date: publicacion, image: { original_url }, name, description, issue_number } }) {
   const stock = Math.floor(Math.random() * 10);
-
+  const precio = Number(issue_number.substring(issue_number.length - 1))*3+500;
   return (
 
     <Container className="detalleGeneral my-5">
@@ -26,6 +23,10 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
           <Card.Title>Disponibles:</Card.Title>
           <Card.Text>
             {stock}
+          </Card.Text>
+          <Card.Title>Precio:</Card.Title>
+          <Card.Text>
+            {"$"+precio}
           </Card.Text>
           <Card.Title>Titulo:</Card.Title>
           <Card.Text>
