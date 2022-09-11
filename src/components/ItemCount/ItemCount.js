@@ -1,11 +1,9 @@
-import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import "./ItemCount.scss"
 
-function ItemCount({ stock, inicial, onAdd }) {
-    const [counter, setCounter] = useState(Number(inicial));
+function ItemCount({ stock, counter, setCounter, setOnAdd }) {
 
     function handleSumar() {
         if (counter < stock)
@@ -17,6 +15,7 @@ function ItemCount({ stock, inicial, onAdd }) {
             setCounter(counter - 1);
         }
     }
+
     return (
         <div className='itemCount'>
             <div className='contenedorCounter'>
@@ -38,7 +37,7 @@ function ItemCount({ stock, inicial, onAdd }) {
             <Button
                 variant="danger"
                 className='buttonCompra'
-                onClick={stock > 0 ? onAdd : null}
+                onClick={stock > 0 ? () => setOnAdd(true) : null}
             >Comprar
             </Button>
         </div>

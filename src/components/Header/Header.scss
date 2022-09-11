@@ -33,18 +33,34 @@ header {
 
 .tumbaOffers {
     @extend .tumba;
-    transform: rotate(2deg);
+    transform: rotate(10deg);
     position: relative;
-    bottom: -0.6vw;
-    right: 5vw;
+    top: -2.2vw;
+    right: 2.5vw;
 }
 
 .tumbaHome {
     @extend .tumba;
     transform: rotate(-5deg);
     position: relative;
-    bottom: 3.7vw;
+    top: -3.5vw;
     right: -9vw;
+}
+
+.tumbaNews {
+    @extend .tumba;
+    transform: rotate(-5deg);
+    position: relative;
+    top: -0.6vw;
+    right: -2vw;
+}
+
+.tumbaSpanish {
+    @extend .tumba;
+    transform: rotate(5deg);
+    position: relative;
+    top: 0.7vw;
+    right: 5vw;
 }
 
 .tumbaActive {

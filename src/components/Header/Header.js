@@ -1,12 +1,12 @@
 import './Header.scss'
-import MarketCar from '../MarketCar/MarketCar.js'
+import MarketCart from '../MarketCar/MarketCart.js'
 import { NavLink } from "react-router-dom"
 
 function Header() {
 
     return (
         <header>
-            <MarketCar></MarketCar>
+            <MarketCart></MarketCart>
             <div className='menu'>
                 <NavLink to={`/`}
                     className={({ isActive }) =>
@@ -24,6 +24,24 @@ function Header() {
                 >
                     <div className='tumbaOffers' >
                         OFFERS
+                    </div>
+                </NavLink>
+                <NavLink to={`/category/52411`}
+                    className={({ isActive }) =>
+                        isActive ? "tumbaActive" : "tumbaNone"
+                    }
+                >
+                    <div className='tumbaNews' >
+                        NEWS
+                    </div>
+                </NavLink>
+                <NavLink to={`/category/49473`}
+                    className={({ isActive }) =>
+                        isActive ? "tumbaActive" : "tumbaNone"
+                    }
+                >
+                    <div className='tumbaSpanish' >
+                        SPANISH
                     </div>
                 </NavLink>
             </div>

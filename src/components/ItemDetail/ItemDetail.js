@@ -2,12 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import "./ItemDetail.scss"
 import ItemCount from '../ItemCount/ItemCount';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import { NavLink } from "react-router-dom";
 
-function ItemDetail({ producto: { cover_date: publicacion, image: { original_url }, name, description, issue_number } }) {
-  const stock = Math.floor(Math.random() * 10);
-  const precio = Number(issue_number.substring(issue_number.length - 1))*3+500;
+function ItemDetail({ producto: { cover_date: publicacion, image: { original_url }, name, description, issue_number, precio, stock } }) {
+  const [counter, setCounter] = useState(1);
+  const [onAdd, setOnAdd] = useState(false);
+
   return (
-
     <Container className="detalleGeneral my-5">
       <div
         className='portadaComic'
@@ -16,7 +19,14 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
           className="rounded imgComic mb-2"
           src={original_url}
         ></img>
-        <ItemCount stock={stock} inicial={stock > 0 ? 1 : 0} ></ItemCount>
+        {!onAdd ? <ItemCount stock={stock} counter={counter} setCounter={setCounter} setOnAdd={setOnAdd} ></ItemCount> :
+          <NavLink
+            to={`/cart`}
+            className="buttonTerminar"
+          >
+            <Button variant="success">TERMINAR COMPRA</Button>
+          </NavLink>
+        }
       </div>
       <Card className='detalle'>
         <Card.Body>
@@ -26,7 +36,7 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
           </Card.Text>
           <Card.Title>Precio:</Card.Title>
           <Card.Text>
-            {"$"+precio}
+            {"$" + precio}
           </Card.Text>
           <Card.Title>Titulo:</Card.Title>
           <Card.Text>
