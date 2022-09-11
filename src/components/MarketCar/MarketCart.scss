@@ -28,6 +28,7 @@ $margin_border_carro: 10px;
     justify-content: center;
     cursor: pointer;
     color: white;
+    visibility: hidden;
 }
 
 .contenedorCarrito{
@@ -35,6 +36,6 @@ $margin_border_carro: 10px;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 0.5vh;
+    top: -0.5vh;
     right: 2vh;
 }

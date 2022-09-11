@@ -1,7 +1,8 @@
+import CartList from "../CartList/CartList"
 
 function Cart() {
     return (
-        <></>
+        <CartList></CartList>
     )
 }
 

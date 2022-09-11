@@ -13,7 +13,7 @@ function ItemDetailContainer() {
         getComic(comicId)
             .then((res) => {setComic(res);})
     }, [])
-
+    
     return (
         <div>
             {comic && <ItemDetail producto={comic}></ItemDetail>}

@@ -3,7 +3,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import "./ItemCount.scss"
 
-function ItemCount({ stock, counter, setCounter, setOnAdd }) {
+function ItemCount({ stock, counter, setCounter, onAdd }) {
 
     function handleSumar() {
         if (counter < stock)
@@ -37,7 +37,7 @@ function ItemCount({ stock, counter, setCounter, setOnAdd }) {
             <Button
                 variant="danger"
                 className='buttonCompra'
-                onClick={stock > 0 ? () => setOnAdd(true) : null}
+                onClick={onAdd}
             >Comprar
             </Button>
         </div>
