@@ -33,7 +33,7 @@ header {
 
 .tumbaOffers {
     @extend .tumba;
-    transform: rotate(5deg);
+    transform: rotate(2deg);
     position: relative;
     bottom: -0.6vw;
     right: 5vw;
@@ -43,8 +43,8 @@ header {
     @extend .tumba;
     transform: rotate(-5deg);
     position: relative;
-    bottom: 3.5vw;
-    right: -10vw;
+    bottom: 3.7vw;
+    right: -9vw;
 }
 
 .tumbaActive {

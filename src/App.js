@@ -3,12 +3,12 @@ import './App.scss'
 import Header from './components/Header/Header';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Header></Header>
         <Routes>
               <Route path='/' element={<ItemListContainer/>}/>
@@ -16,7 +16,7 @@ function App() {
               <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
               <Route path='*' element={<Navigate to="/"/>} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
