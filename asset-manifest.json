@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hopper-react/static/css/main.37eb8264.css",
-    "main.js": "/hopper-react/static/js/main.8d77d154.js",
+    "main.css": "/hopper-react/static/css/main.49e5cb74.css",
+    "main.js": "/hopper-react/static/js/main.bc452539.js",
     "static/js/787.c4ce0a6d.chunk.js": "/hopper-react/static/js/787.c4ce0a6d.chunk.js",
     "static/media/banner.jpg": "/hopper-react/static/media/banner.f4b9743442448d962ca5.jpg",
     "index.html": "/hopper-react/index.html",
-    "main.37eb8264.css.map": "/hopper-react/static/css/main.37eb8264.css.map",
-    "main.8d77d154.js.map": "/hopper-react/static/js/main.8d77d154.js.map",
+    "main.49e5cb74.css.map": "/hopper-react/static/css/main.49e5cb74.css.map",
+    "main.bc452539.js.map": "/hopper-react/static/js/main.bc452539.js.map",
     "787.c4ce0a6d.chunk.js.map": "/hopper-react/static/js/787.c4ce0a6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37eb8264.css",
-    "static/js/main.8d77d154.js"
+    "static/css/main.49e5cb74.css",
+    "static/js/main.bc452539.js"
   ]
 }
