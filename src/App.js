@@ -15,7 +15,7 @@ function App() {
               <Route path='/' element={<ItemListContainer/>}/>
               <Route path='/comic/:comicId' element={<ItemDetailContainer/>}/>
               <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-              <Route path='/cart' element={Cart}></Route>
+              <Route path='/cart' element={<Cart/>}></Route>
               <Route path='*' element={<Navigate to="/"/>} />
         </Routes>
     </HashRouter>
