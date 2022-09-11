@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/hopper-react/static/css/main.45139f1a.css",
-    "main.js": "/hopper-react/static/js/main.4668a70d.js",
+    "main.css": "/hopper-react/static/css/main.37eb8264.css",
+    "main.js": "/hopper-react/static/js/main.2477ab6d.js",
     "static/js/787.c4ce0a6d.chunk.js": "/hopper-react/static/js/787.c4ce0a6d.chunk.js",
-    "static/media/banner2.jpg": "/hopper-react/static/media/banner2.f4b9743442448d962ca5.jpg",
-    "static/media/MarketCar.png": "/hopper-react/static/media/MarketCar.9a41d86961a708e89697.png",
+    "static/media/banner.jpg": "/hopper-react/static/media/banner.f4b9743442448d962ca5.jpg",
     "index.html": "/hopper-react/index.html",
-    "main.45139f1a.css.map": "/hopper-react/static/css/main.45139f1a.css.map",
-    "main.4668a70d.js.map": "/hopper-react/static/js/main.4668a70d.js.map",
+    "main.37eb8264.css.map": "/hopper-react/static/css/main.37eb8264.css.map",
+    "main.2477ab6d.js.map": "/hopper-react/static/js/main.2477ab6d.js.map",
     "787.c4ce0a6d.chunk.js.map": "/hopper-react/static/js/787.c4ce0a6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45139f1a.css",
-    "static/js/main.4668a70d.js"
+    "static/css/main.37eb8264.css",
+    "static/js/main.2477ab6d.js"
   ]
 }
