@@ -8,10 +8,10 @@ function MarketCart() {
 
     const { cartCantidad } = useContext(CartContext);
     return (
-        <NavLink to={`/cart`} className="contenedorCarrito">
+        <NavLink to={cartCantidad > 0 ? "/cart" : "/error/100"} className="contenedorCarrito">
             {
                 <div className="numeroCompras" style={
-                        { visibility: cartCantidad() > 1 ? "visible" : "hidden" }
+                        { visibility: cartCantidad() > 0 ? "visible" : "hidden" }
                 }>
                     <b>
                         {cartCantidad()}

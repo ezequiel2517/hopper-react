@@ -24,7 +24,7 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
   }
 
   return (
-    <Container className="detalleGeneral my-5">
+    <Container className="detalleGeneral mb-5">
       <div
         className='portadaComic'
       >
