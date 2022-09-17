@@ -1,11 +1,13 @@
 import './Header.scss'
 import MarketCart from '../MarketCar/MarketCart.js'
 import { NavLink } from "react-router-dom"
+import Mensaje from '../Mensaje/Mensaje'
 
 function Header() {
 
     return (
         <header>
+            <Mensaje></Mensaje>
             <MarketCart></MarketCart>
             <div className='menu'>
                 <NavLink to={`/`}

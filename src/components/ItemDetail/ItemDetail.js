@@ -20,7 +20,6 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
       cantidad: counter,
       screen_url
     }
-    console.log(itemToCart)
     addToCart(itemToCart);
   }
 

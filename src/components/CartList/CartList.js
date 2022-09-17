@@ -3,10 +3,18 @@ import Table from 'react-bootstrap/Table';
 import { CartContext } from '../../contexts/CartContext/CartContext';
 import CartItem from '../CartItem/CartItem';
 import './CartList.scss'
- 
+import { Navigate } from 'react-router-dom';
+
+
+
 function CartList() {
 
-    const {cart, cartTotal} = useContext(CartContext);
+    const {cart, cartTotal, cartCantidad} = useContext(CartContext);
+
+    if(cartCantidad()===0){
+        return <Navigate replace to="/error/100" />
+    }
+
     return (
         <Table bordered
             className='my-5 container tablaCompras w-50'>

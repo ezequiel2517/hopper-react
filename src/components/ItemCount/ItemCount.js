@@ -16,6 +16,14 @@ function ItemCount({ stock, counter, setCounter, onAdd }) {
         }
     }
 
+    if(stock===0)
+        return (
+            <Button
+                variant="danger"
+            >SIN STOCK DISPONIBLE
+            </Button>
+        )
+
     return (
         <div className='itemCount'>
             <div className='contenedorCounter'>

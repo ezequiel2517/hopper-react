@@ -3,24 +3,57 @@ $font_tumba: 'Koulen', cursive;
 
 
 header {
-    height: 20vw;
+    width: 100%;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 5px 15px;
+    background-image: url("../../components/Header/banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    z-index: 100;
+    background-color: #f80000;
+    //animation-name: moveHeader;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downHeader {
+    from {
+        height: 55vh;
+    }
+
+    to {
+        height: 100vh;
+    }
+}
+
+@keyframes upHeader {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 55vh;
+    }
 }
 
 .tumba {
     width: 6vw;
     height: 6vw;
     background-image: url("./tumba.png");
-    background-size:contain;
+    background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat;
     transform: rotate(-7deg);
-    &:hover{
+
+    &:hover {
         filter: invert(100%);
     }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +68,7 @@ header {
     @extend .tumba;
     transform: rotate(10deg);
     position: relative;
-    top: -2.2vw;
+    bottom: 9vw;
     right: 2.5vw;
 }
 
@@ -43,7 +76,7 @@ header {
     @extend .tumba;
     transform: rotate(-5deg);
     position: relative;
-    top: -3.5vw;
+    bottom: 10vw;
     right: -9vw;
 }
 
@@ -51,7 +84,7 @@ header {
     @extend .tumba;
     transform: rotate(-5deg);
     position: relative;
-    top: -0.6vw;
+    bottom: 7.5vw;
     right: -2vw;
 }
 
@@ -59,7 +92,7 @@ header {
     @extend .tumba;
     transform: rotate(5deg);
     position: relative;
-    top: 0.7vw;
+    bottom: 6vw;
     right: 5vw;
 }
 
@@ -68,7 +101,7 @@ header {
     text-decoration: none;
 }
 
-.tumbaNone{
+.tumbaNone {
     text-decoration: none;
 }
 

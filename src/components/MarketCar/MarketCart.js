@@ -7,16 +7,11 @@ import {NavLink} from "react-router-dom"
 function MarketCart() {
 
     const { cartCantidad } = useContext(CartContext);
-
     return (
         <NavLink to={`/cart`} className="contenedorCarrito">
             {
                 <div className="numeroCompras" style={
-                    cartCantidad() > 0
-                        ?
-                        { visibility: "visible" }
-                        :
-                        { visibility: "none" }
+                        { visibility: cartCantidad() > 1 ? "visible" : "hidden" }
                 }>
                     <b>
                         {cartCantidad()}
