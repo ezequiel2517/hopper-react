@@ -11,7 +11,6 @@ export function CartProvider({ children }) {
     }
 
     function deleteItem(id) {
-        console.log(id)
         return setCart(cart.filter((item) => item.id!==id));
     }
 

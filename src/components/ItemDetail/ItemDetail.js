@@ -52,7 +52,7 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
           </Card.Text>
           <Card.Title>Precio:</Card.Title>
           <Card.Text>
-            {"$" + precio}
+            {precio > 0 ? "$" + precio : "N/A"}
           </Card.Text>
           <Card.Title>Titulo:</Card.Title>
           <Card.Text>
