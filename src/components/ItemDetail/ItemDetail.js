@@ -38,7 +38,7 @@ function ItemDetail({ producto: { cover_date: publicacion, image: { original_url
             to={`/cart`}
             className="buttonTerminar"
           >
-            <Button variant="success">TERMINAR COMPRA</Button>
+            <Button variant="success">IR AL CARRO DE COMPRAS</Button>
           </NavLink>
           :
           <ItemCount stock={stock} counter={counter} setCounter={setCounter} onAdd={handleAgregar}></ItemCount>

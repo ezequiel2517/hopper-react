@@ -1,0 +1,19 @@
+.formulario {
+    border: 2px solid #f80000;
+    padding: 3vh;
+    border-radius: 10px;
+    h2 {
+        color: white;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

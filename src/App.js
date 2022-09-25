@@ -7,13 +7,14 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Cart from './components/Cart/Cart';
 import { CartProvider } from './contexts/CartContext/CartContext';
 import AlertaGral from './components/AlertaGral/AlertaGral';
-import { ExceptionProvider } from './contexts/ExceptionContext/ExceptionContext';
+import { MensajeProvider } from './contexts/MensajeContext/MensajeContext';
+import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
 
   return (
-    <ExceptionProvider>
+    <MensajeProvider>
       <CartProvider>
         <HashRouter>
           <Header></Header>
@@ -22,12 +23,13 @@ function App() {
             <Route path='/comic/:comicId' element={<ItemDetailContainer />} />
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/cart' element={<Cart />}></Route>
-            <Route path='/error/:idError' element={<AlertaGral />}></Route>
+            <Route path='/checkout' element={<Checkout />}></Route>
+            <Route path='/alert/:idAlert' element={<AlertaGral />}></Route>
             <Route path='*' element={<Navigate to="/" />} />
           </Routes>
         </HashRouter>
       </CartProvider>
-    </ExceptionProvider>
+    </MensajeProvider>
 
   );
 }

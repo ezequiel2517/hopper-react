@@ -1,15 +1,15 @@
 import "./Mensaje.scss"
 import icon from "./iconMensaje.webp"
 import { useContext } from 'react';
-import { ExceptionContext } from '../../contexts/ExceptionContext/ExceptionContext';
+import { MensajeContext } from '../../contexts/MensajeContext/MensajeContext';
 
 function Mensaje() {
-    const { exception} = useContext(ExceptionContext);
+    const { mensaje} = useContext(MensajeContext);
 
     return (
         <div className="mensaje" style={{visibility:"visible"}}>
             <img className="icon" src={icon}></img>
-            <p>{exception}</p>
+            <p>{mensaje}</p>
         </div>
     )
 }
